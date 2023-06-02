@@ -1,3 +1,17 @@
+.text-primary {
+    color: #00DFA2 !important;
+}
+
+.site-heading .site-heading-lower {
+    font-size: 6rem;
+    font-weight: 200;
+    line-height: 4rem;
+}
+
 .cta {
     background-color: rgba(82,109,130,.9)
+}
+
+.footer {
+    background-color: rgba(66,72,116,.9);
 }
