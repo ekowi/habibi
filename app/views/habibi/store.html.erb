@@ -7,7 +7,11 @@
             <div class="row">
                 <div class="col-xl-9 mx-auto">
                     <div class="text-center cta-inner rounded">
-                        <h2 class="section-heading mb-5"><span class="section-heading-upper">Come On In</span><span class="section-heading-lower">We're Open</span></h2>
+                        <% if Time.now.strftime("%A") == "Sunday" %>
+                            <h2 class="section-heading mb-5"><span class="section-heading-upper">Sorry</span><span class="section-heading-lower">We're Closed</span></h2>
+                        <% else %>  
+                            <h2 class="section-heading mb-5"><span class="section-heading-upper">Come On In</span><span class="section-heading-lower">We're Open</span></h2>
+                        <% end %>
                         <ul class="list-unstyled text-start mx-auto list-hours mb-5">
                             <li class="d-flex list-unstyled-item list-hours-item">Sunday<span class="ms-auto">Closed</span></li>
                             <li class="d-flex list-unstyled-item list-hours-item">Monday<span class="ms-auto">7:00 AM to 8:00 PM</span></li>
@@ -17,28 +21,22 @@
                             <li class="d-flex list-unstyled-item list-hours-item">Friday<span class="ms-auto">7:00 AM to 8:00 PM</span></li>
                             <li class="d-flex list-unstyled-item list-hours-item">Saturday<span class="ms-auto">9:00 AM to 5:00 PM</span></li>
                         </ul>
-                        <p class="address mb-5"><em><strong>1116 Orchard Street</strong><span><br>Golden Valley, Minnesota</span></em></p>
-                        <p class="address mb-0"><small><em>Call Anytime</em></small><span><br>(317) 585-8468</span></p>
+                        <p class="address mb-5"><em><strong>Gang Bakso Blangkon</strong><span><br>Gang Musholla Ash-Sholihin, Kp. Cikempong RT 05/05 No.93, Pakansari, Cibinong 16915</span></em></p>
+                        <p class="address mb-0"><small><em>Call Anytime</em></small><span><br>Nomer Pak opik</span></p>
+                        <br><iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.277413651502!2d106.83237517428626!3d-6.486511263417385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c1e5304cd165%3A0xf4d6e473d4c5a56e!2sSERVIS%20KOMPUTER%2FLAPTOP!5e0!3m2!1sid!2sid!4v1685806550112!5m2!1sid!2sid" 
+                            width="400" 
+                            height="300" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="page-section about-heading">
-        <div class="container"><img class="img-fluid rounded about-heading-img mb-3 mb-lg-0" src="assets/img/about.jpg">
-            <div class="about-heading-content">
-                <div class="row">
-                    <div class="col-lg-10 col-xl-9 mx-auto">
-                        <div class="bg-faded rounded p-5">
-                            <h2 class="section-heading mb-4"><span class="section-heading-upper">Strong Coffee, Strong Roots</span><span class="section-heading-lower">&nbsp;About Our Cafe</span></h2>
-                            <p>Founded in 1987 by the Hernandez brothers, our establishment has been serving up rich coffee sourced from artisan farmers in various regions of South and Central America. We are dedicated to travelling the world, finding the best coffee, and bringing back to you here in our cafe.</p>
-                            <p class="mb-0"><span>We guarantee that you will fall in&nbsp;</span><em>lust</em><span>&nbsp;with our decadent blends the moment you walk inside until you finish your last sip. Join us for your daily routine, an outing with friends, or simply just to enjoy some alone time.</span></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    
     <footer class="text-center footer text-faded py-5">
         <div class="container">
             <p class="m-0 small">Copyright&nbsp;©&nbsp;Habibi 2023</p>
